@@ -20,6 +20,7 @@ mason_lspconfig.setup({
 		"svelte",
 		"emmet_ls",
 		"gopls",
+		"clangd",
 	},
 	automatic_installation = false,
 })
@@ -29,5 +30,6 @@ mason_tool_installer.setup({
 		"prettier",
 		"stylua",
 		"eslint_d",
+		"goimports",
 	},
 })

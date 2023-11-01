@@ -13,6 +13,7 @@ conform.setup({
 		yaml = { "prettier" },
 		markdown = { "prettier" },
 		lua = { "stylua" },
+		go = { "goimports" },
 	},
 	format_on_save = {
 		lsp_fallback = true,
