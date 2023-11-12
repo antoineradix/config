@@ -36,7 +36,6 @@ return require("packer").startup(function(use)
 	use({ "lewis6991/gitsigns.nvim", commit = "5a9a6ac29a7805c4783cda21b80a1e361964b3f2" }) -- need to config
 	use({ "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" })
 	use({ "szw/vim-maximizer", commit = "2e54952fe91e140a2e69f35f22131219fcd9c5f1" })
-	use({ "42Paris/42header", commit = "71e6a4df6d72ae87a080282bf45bb993da6146b2" })
 
 	-- Formatting
 	use({ "stevearc/conform.nvim", commit = "280055248661a4fc7b692db2d5ee80a465ebb577" })
@@ -57,6 +56,10 @@ return require("packer").startup(function(use)
 	use({ "nvim-tree/nvim-web-devicons", commit = "3af745113ea537f58c4b1573b64a429fefad9e07" })
 	use({ "nvim-lualine/lualine.nvim", commit = "7533b0ead663d80452210c0c089e5105089697e5" })
 	use({ "lukas-reineke/indent-blankline.nvim", commit = "9301e434dd41154ffe5c3d5b8a5c9acd075ebeff" })
+
+	-- School
+	use({ "42Paris/42header", commit = "71e6a4df6d72ae87a080282bf45bb993da6146b2" })
+	use({ "cacharle/c_formatter_42.vim", commit = "7a2d50f6683d6f58a2c95375524b4406d6bdc2c3" })
 
 	if packer_bootstrap then
 		require("packer").sync()
