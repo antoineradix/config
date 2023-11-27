@@ -1,19 +1,26 @@
-require("plugins.packer")
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+	vim.fn.system({
+		"git",
+		"clone",
+		"--filter=blob:none",
+		"https://github.com/folke/lazy.nvim.git",
+		"--branch=stable",
+		lazypath,
+	})
+end
+vim.opt.rtp:prepend(lazypath)
 
-require("plugins.configs.coding.nvim-cmp")
-require("plugins.configs.coding.mini")
-require("plugins.configs.colorscheme.catppuccin")
-require("plugins.configs.editor.telescope")
-require("plugins.configs.editor.neoclip")
-require("plugins.configs.editor.maximize")
---require("plugins.configs.editor.gitsigns")
-require("plugins.configs.editor.vim-bbye")
-require("plugins.configs.formatting.conform")
-require("plugins.configs.linting.nvim-lint")
-require("plugins.configs.lsp.lspconfig")
-require("plugins.configs.lsp.mason")
-require("plugins.configs.treesitter.treesitter")
-require("plugins.configs.ui.lualine")
-require("plugins.configs.ui.indent-blankline")
-require("plugins.configs.school.42header")
-require("plugins.configs.school.norme")
+local opts = {
+	defaults = {
+		lazy = false,
+	},
+	install = {
+		colorscheme = { "moonfly" },
+	},
+	change_detection = {
+		notify = false,
+	},
+}
+
+require("lazy").setup("plugins.config", opts)

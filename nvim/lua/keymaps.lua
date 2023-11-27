@@ -1,7 +1,8 @@
 vim.g.mapleader = " "
 
 local keymaps = {
-	-- ["<leader>e"] = ":Explore<CR>|",
+	["<leader>e"] = ":Lexplore<CR>|",
+	["<leader>r"] = ":Rexplore<CR>|",
 	["<leader><ESC>"] = ":nohl<CR>",
 	["<leader>sv"] = "<C-w>v",
 	["<leader>sh"] = "<C-w>s",

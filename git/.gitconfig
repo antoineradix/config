@@ -1,0 +1,41 @@
+[user]
+	name = Antoine Radix
+	email = aradix@student.42.fr
+	username = antoineradix
+[core]
+	editor = nvim
+[color]
+	ui = auto
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	a = add
+	b = branch
+	c = commit
+	cl = clone
+	d = diff
+	dt = difftool
+	f = fetch
+	fo = fetch origin
+	fu = fetch upstream
+	l = log --oneline
+ 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
+	ls = ls-files
+	lsf = !git ls-files | grep -i
+	m = merge
+	o = checkout
+	om = checkout master
+	ob = checkout -b
+	pu = push
+	pl = pull
+	rb = rebase
+	re = reset
+	rh = reset HEAD
+	reh = reset --hard
+	r = remote
+	rmf = rm -f
+	rmrf = rm -r -f
+	s = status
+	t = tag
