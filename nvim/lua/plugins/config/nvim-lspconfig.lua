@@ -90,7 +90,7 @@ local config = function()
 	})
 end
 
-return  {
+return {
 	"neovim/nvim-lspconfig",
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",

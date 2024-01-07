@@ -3,8 +3,8 @@ return {
 		"42Paris/42header",
 		config = function()
 			vim.g.user42 = "aradix"
-			vim.g.mail42= "aradix@student.42.fr"
-			vim.keymap.set("n", "<leader>h", "<cmd>Stdheader<cr>")
+			vim.g.mail42 = "aradix@student.42.fr"
+			vim.keymap.set("n", "<leader>1", "<cmd>Stdheader<cr>")
 		end,
 	},
 	{
@@ -14,5 +14,5 @@ return {
 			vim.g.c_formatter_42_format_on_save = 0
 			vim.keymap.set("n", "<leader>fc", "<cmd>CFormatter42<cr>")
 		end,
-	}
+	},
 }

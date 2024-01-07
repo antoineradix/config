@@ -1,4 +1,4 @@
-return  {
+return {
 	"williamboman/mason.nvim",
 	lazy = true,
 	event = "BufReadPre",

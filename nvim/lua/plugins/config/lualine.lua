@@ -1,11 +1,13 @@
 local config = function()
 	require("lualine").setup({
 		options = {
-			theme = "moonfly",
-			component_separators = "",
-			section_separators = "",
+			theme = "tokyonight",
+			--component_separators = "",
+			--section_separators = "",
+			component_separators = { left = "", right = "" },
+			section_separators = { left = "", right = "" },
 			always_divide_middle = true,
-			globalstatus = false,
+			globalstatus = true,
 		},
 		sections = {
 			lualine_a = { "mode" },

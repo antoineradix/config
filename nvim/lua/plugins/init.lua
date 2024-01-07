@@ -16,7 +16,7 @@ local opts = {
 		lazy = false,
 	},
 	install = {
-		colorscheme = { "moonfly" },
+		colorscheme = { "tokyonight" },
 	},
 	change_detection = {
 		notify = false,

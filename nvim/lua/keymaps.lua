@@ -1,8 +1,6 @@
 vim.g.mapleader = " "
 
 local keymaps = {
-	["<leader>e"] = ":Lexplore<CR>|",
-	["<leader>r"] = ":Rexplore<CR>|",
 	["<leader><ESC>"] = ":nohl<CR>",
 	["<leader>sv"] = "<C-w>v",
 	["<leader>sh"] = "<C-w>s",
@@ -16,10 +14,14 @@ local keymaps = {
 	["-"] = ":vertical resize -2<CR>",
 	["+"] = ":vertical resize +2<CR>",
 	["<leader><CR>"] = ":w!<CR>",
-	["<leader>n"] = ":bn<CR>",
-	["<leader>p"] = ":bp<CR>",
-	["<leader>tk"] = ":m .-2<CR>==",
-	["<leader>tj"] = ":m .+1<CR>==",
+	["<leader>n"] = ":bnext<CR>",
+	["<leader>p"] = ":bprevious<CR>",
+	["<leader>tt"] = ":term<CR>",
+	["<C-n>"] = ":tabnew<CR>",
+	["<C-l>"] = ":tabnext<CR>",
+	["<C-h>"] = ":tabprev<CR>",
+	--["<leader>lj"] = ":m .-2<CR>==",
+	-- ["<leader>lk"] = ":m .+1<CR>==",
 }
 
 for k, v in pairs(keymaps) do
